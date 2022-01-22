@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Wars of Dots</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.min.css" />
+	</head>
+
+	<body>
+		<div id="result"><div id="resultWinner"></div></div>
+
+		<div id="start">
+			<div class="logo">
+				<div style="color: rgb(80, 0, 0); -webkit-text-stroke: 0.02em rgb(150, 37, 37)">Wars</div>
+				<div class="logo_of">of</div>
+				<div style="color: rgb(28, 28, 80); -webkit-text-stroke: 0.02em rgb(60, 58, 187)">Dots</div>
+			</div>
+
+			<div style="display: flex; flex-flow: row; width: 100%; justify-content: space-around">
+				<div class="leftBlock">
+					<div class="redStart"></div>
+					<div style="margin: 50px 0px 30px 0px; color: rgb(255, 80, 80)">Controller</div>
+
+					<div style="display: flex; flex-flow: row">
+						<div class="controller redControlAux">Q</div>
+						<div class="controller redControlMain">W</div>
+						<div class="controller redControlAux">E</div>
+					</div>
+					<div style="display: flex; flex-flow: row">
+						<div class="controller redControlMain">A</div>
+						<div class="controller"></div>
+						<div class="controller redControlMain">D</div>
+					</div>
+
+					<div style="display: flex; flex-flow: row">
+						<div class="controller redControlAux">Z</div>
+						<div class="controller redControlMain">S</div>
+						<div class="controller redControlAux">C</div>
+					</div>
+				</div>
+
+				<div class="centralBlock">
+					<div class="centralBlock mode">
+						<button id="short" class="unselectMode" onclick="shortMode()">Short game</button>
+						<button id="normal" class="selectMode" onclick="normalMode()">Normal game</button>
+						<button id="long" class="unselectMode" onclick="longMode()">Long game</button>
+
+						<button class="startButton" onclick="start()">START</button>
+					</div>
+				</div>
+
+				<div class="rightBlock">
+					<div class="blueStart"></div>
+					<div style="margin: 50px 0px 30px 0px; color: rgb(80, 80, 255)">Controller</div>
+
+					<div style="display: flex; flex-flow: row">
+						<div class="controller blueControlAux">Home</div>
+						<div class="controller blueControlMain">↑</div>
+						<div class="controller blueControlAux">PgUp</div>
+					</div>
+					<div style="display: flex; flex-flow: row">
+						<div class="controller blueControlMain">←</div>
+						<div class="controller"></div>
+						<div class="controller blueControlMain">→</div>
+					</div>
+
+					<div style="display: flex; flex-flow: row">
+						<div class="controller blueControlAux">End</div>
+						<div class="controller blueControlMain">↓</div>
+						<div class="controller blueControlAux">PgDn</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="blueRect"></div>
+		<div id="redRect"></div>
+
+		<div id="blueDot"></div>
+		<div id="redDot"></div>
+		<div id="extraDot"></div>
+
+		<div id="blueHealth"><div id="blueHealth_stat"></div></div>
+		<div id="redHealth"><div id="redHealth_stat"></div></div>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>

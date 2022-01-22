@@ -1,0 +1,373 @@
+html,
+body {
+	background-color: rgb(13, 9, 20);
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow: hidden;
+}
+
+#start {
+	background-color: rgb(12, 14, 34);
+	color: rgb(255, 255, 255);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: space-around;
+	z-index: 8;
+	visibility: visible;
+}
+
+.controller {
+	width: 60px;
+	height: 60px;
+	z-index: 8;
+	border-radius: 5px;
+	margin: 5px;
+	vertical-align: middle;
+	font-size: 20px;
+	line-height: 60px;
+	vertical-align: middle;
+}
+
+.redControlMain {
+	background-color: rgb(109, 22, 22);
+}
+
+.redControlAux {
+	background-color: rgb(197, 50, 50);
+}
+
+.redControlMain:hover,
+.redControlAux:hover {
+	box-shadow: 0px 0px 20px 5px rgb(100, 0, 0);
+}
+
+.blueControlMain {
+	background-color: rgb(21, 15, 110);
+}
+
+.blueControlAux {
+	background-color: rgb(46, 36, 187);
+}
+
+.blueControlMain:hover,
+.blueControlAux:hover {
+	box-shadow: 0px 0px 20px 5px rgb(0, 0, 100);
+}
+
+.leftBlock {
+	width: auto;
+	display: flex;
+	flex-flow: column;
+	font-size: 30px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	border-radius: 25px;
+	box-shadow: 0px 0px 20px 10px rgb(200, 0, 0);
+}
+
+.leftBlock:hover {
+	background-color: rgb(200, 0, 0);
+}
+
+.redStart {
+	background-color: rgb(255, 0, 0);
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	box-shadow: 0px 0px 20px 5px rgb(200, 0, 0);
+}
+
+.centralBlock {
+	width: auto;
+	display: flex;
+	flex-flow: column;
+	font-size: 30px;
+	text-align: center;
+	align-items: center;
+}
+
+.logo {
+	height: 100px;
+	width: auto;
+	font-size: 100px;
+	font-weight: bold;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	background-color: rgb(12, 14, 40);
+	border-radius: 50px;
+	box-shadow: 0px 0px 20px 10px rgb(200, 0, 200);
+	padding: 20px;
+}
+
+.logo:hover {
+	box-shadow: 0px 0px 20px 10px rgb(103, 3, 161);
+	background-color: rgb(20, 0, 20);
+}
+
+.logo_of {
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	vertical-align: middle;
+	background-color: rgb(50, 0, 50);
+	color: rgb(200, 0, 200);
+	margin: 0px 25px 0px 25px;
+	font-size: 60px;
+	border-radius: 50px;
+	box-shadow: 0px 0px 10px 10px rgb(200, 0, 200);
+}
+
+.logo_of:hover {
+	background-color: rgb(57, 2, 83);
+	box-shadow: 0px 0px 10px 10px rgb(103, 3, 161);
+	color: rgb(103, 3, 161);
+}
+
+.mode {
+	width: 100%;
+}
+
+.selectMode {
+	width: 100%;
+	background-color: rgb(88, 17, 121);
+	color: rgb(255, 255, 255);
+	box-shadow: 0px 0px 5px 8px rgb(133, 74, 160);
+	border: none;
+	font-size: 30px;
+	margin-top: 20px;
+	padding: 10px 20px 10px 20px;
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+.selectMode:hover {
+	background-color: rgb(134, 30, 182);
+	box-shadow: 0px 0px 5px 8px rgb(180, 98, 218);
+}
+
+.unselectMode {
+	width: 100%;
+	background-color: rgb(165, 136, 192);
+	color: rgb(0, 0, 0);
+	border: none;
+	font-size: 30px;
+	margin-top: 20px;
+	padding: 10px 20px 10px 20px;
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+.unselectMode:hover {
+	background-color: rgb(145, 85, 202);
+	color: rgb(255, 255, 255);
+	box-shadow: 0px 0px 5px 8px rgb(88, 17, 121);
+}
+
+.startButton {
+	width: 100%;
+	background-color: rgb(8, 100, 0);
+	color: rgb(255, 255, 255);
+	border: none;
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 100px;
+	padding: 10px 20px 10px 20px;
+	border-radius: 25px;
+	box-shadow: 0px 0px 5px 8px rgb(0, 200, 0);
+	cursor: pointer;
+}
+
+.startButton:hover {
+	background-color: rgb(21, 177, 6);
+	box-shadow: 0px 0px 5px 8px rgb(0, 100, 0);
+}
+
+.rightBlock {
+	width: auto;
+	display: flex;
+	flex-flow: column;
+	font-size: 30px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	border-radius: 25px;
+	box-shadow: 0px 0px 20px 10px rgb(0, 0, 200);
+	padding: 20px;
+}
+
+.rightBlock:hover {
+	background-color: rgb(0, 0, 200);
+}
+
+.blueStart {
+	background-color: rgb(0, 0, 255);
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	box-shadow: 0px 0px 20px 5px rgb(0, 0, 200);
+}
+
+#result {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	z-index: 10;
+	visibility: hidden;
+}
+
+#resultWinner {
+	display: flex;
+	width: 50%;
+	height: 50%;
+	font-weight: bold;
+	font-size: 100px;
+	text-align: center;
+	vertical-align: middle;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	z-index: 11;
+	border-radius: 100px;
+	visibility: hidden;
+}
+
+#blueRect {
+	width: 50px;
+	height: 50px;
+	background-color: rgb(0, 0, 255);
+	border-radius: 50px;
+	position: fixed;
+	box-shadow: 0px 0px 6px 6px rgb(0, 0, 100);
+}
+
+#blueHealth {
+	background-color: rgb(200, 200, 200);
+	width: 50px;
+	height: 10px;
+	position: fixed;
+	margin-top: 50px;
+	border-radius: 25px;
+	box-shadow: 0px 0px 6px 2px rgb(0, 0, 200);
+}
+
+#blueHealth_stat {
+	width: 48px;
+	height: 8px;
+	background-color: rgb(30, 30, 200);
+	border-radius: 25px;
+	position: absolute;
+	margin: 1px;
+}
+
+#redRect {
+	width: 50px;
+	height: 50px;
+	background-color: rgb(255, 0, 0);
+	border-radius: 50px;
+	position: fixed;
+	box-shadow: 0px 0px 6px 6px rgb(100, 0, 0);
+}
+
+#redHealth {
+	background-color: rgb(200, 200, 200);
+	width: 50px;
+	height: 10px;
+	position: fixed;
+	margin-top: 50px;
+	border-radius: 25px;
+	box-shadow: 0px 0px 6px 2px rgb(200, 0, 0);
+}
+
+#redHealth_stat {
+	width: 48px;
+	height: 8px;
+	background-color: rgb(200, 30, 30);
+	border-radius: 25px;
+	position: absolute;
+	margin: 1px;
+}
+
+#blueDot {
+	width: 50px;
+	height: 50px;
+	background-color: rgb(0, 0, 100);
+	border-radius: 50px;
+	position: fixed;
+	margin: 500px 1200px;
+	z-index: -3;
+	animation: blueDot 1000ms infinite;
+}
+
+#redDot {
+	width: 50px;
+	height: 50px;
+	background-color: rgb(100, 0, 0);
+	border-radius: 50px;
+	position: fixed;
+	margin: 500px 1200px;
+	z-index: -3;
+	animation: redDot 1000ms infinite;
+}
+
+#extraDot {
+	width: 50px;
+	height: 50px;
+	background-color: rgb(255, 255, 0);
+	border-radius: 50px;
+	position: fixed;
+	margin: 500px 1200px;
+	z-index: -3;
+	animation: goldDot 500ms infinite;
+	visibility: hidden;
+}
+
+@keyframes blueDot {
+	0% {
+		box-shadow: 0px 0px 6px 4px rgb(0, 100, 200);
+	}
+	50% {
+		box-shadow: 0px 0px 6px 4px rgb(0, 0, 200);
+	}
+	100% {
+		box-shadow: 0px 0px 6px 4px rgb(0, 100, 200);
+	}
+}
+
+@keyframes redDot {
+	0% {
+		box-shadow: 0px 0px 6px 4px rgb(200, 0, 0);
+	}
+	50% {
+		box-shadow: 0px 0px 6px 4px rgb(200, 100, 0);
+	}
+	100% {
+		box-shadow: 0px 0px 6px 4px rgb(200, 0, 0);
+	}
+}
+
+@keyframes goldDot {
+	0% {
+		box-shadow: 0px 0px 8px 6px rgb(200, 0, 0);
+		background-color: rgb(100, 0, 0);
+	}
+	50% {
+		box-shadow: 0px 0px 8px 6px rgb(0, 0, 200);
+		background-color: rgb(0, 0, 100);
+	}
+	100% {
+		box-shadow: 0px 0px 8px 6px rgb(200, 0, 0);
+		background-color: rgb(100, 0, 0);
+	}
+}
